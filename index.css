@@ -1,0 +1,380 @@
+body {
+    background-color: gainsboro;
+    
+}
+
+.header {
+    border: 1px solid;
+    width: 100%;
+    height: 100px;
+    background-color: #e4f3d4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between heading and navigation */
+    padding: 0; /* Consistent padding */
+    
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+}
+
+h1 {
+    margin: 0;
+    /* Keeps the heading aligned to the left */
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #e4f3d4;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(22, 2, 2);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(22, 2, 2);
+    padding: 14px 16px;
+    background-color: #e4f3d4;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(255, 0, 149);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e4f3d4;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.butn {
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main {
+    border: 1px solid pink;
+    padding-top: 18px;
+    width: 100%;
+    background-color: hsl(90, 11%, 89%);
+    background-position: center;
+}
+
+.image1 {
+    position: relative;
+    width: 100%;
+}
+
+.image1 img {
+    object-fit: cover; 
+}
+
+.text1 {
+    font-size: 3em;
+    position: absolute;
+    bottom: 200px;
+    left: 500px;
+    transform: translate(-50%); 
+    font-weight: bold;
+    color: rgb(18, 216, 134);
+    text-shadow: 5px 5px 2px rgb(58, 57, 57);
+    letter-spacing: 5px;
+    animation-name:fontAnimation  ;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+    @keyframes fontAnimation {
+        0% {
+            font-size:20 ;
+            color: #26f5a5;
+            
+        }
+        10%{
+            font-size: 40px;
+            color: #ee3c10;
+        }
+        20%{
+            color: aliceblue;
+        }
+        30%{
+            color: blanchedalmond;
+        }
+        50%{
+            color: cornflowerblue;
+        }
+        80%{
+            color: lightcoral;
+        }
+        100%{
+            color: gold;
+            
+            border-radius: 50px;
+        }
+}
+
+
+.button {
+    position: absolute;
+    bottom: 400px;
+    left: 300px;
+    font-size: 3em;
+    color: rgba(245, 7, 7, 0.973);
+}
+
+.inp {
+    padding: 20px;
+    background-color: rgba(162, 201, 201, 0.445);
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+.galrey {
+    margin: 10px;
+    border: 3px solid rgb(224, 222, 223);
+    float: left;
+    width: 300px;
+}
+
+.galrey:hover {
+    border: 2px solid pink;
+    width: 310px;
+    height: auto;
+}
+
+.galrey img {
+    width: 300px;
+    height: 300px;
+}
+
+.dec {
+    padding: 15px;
+    text-align: center;
+}
+.pre1{
+    text-align: justify;
+    text-transform: capitalize;
+    
+}
+#main1{
+    margin:30px 30px 30px 30px;
+    
+}
+#card1 {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; 
+    margin-top: 20px;
+    
+}
+.card{
+    border: 3px solid rgba(90, 88, 88, 0.089);
+}
+
+#A{
+align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 300px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-description {
+    color: #555;
+}
+
+/* disan card intaroduction  */
+.pre1:hover {
+    transform: scale(1.05);
+    color:#02ee97;
+    background-color: hsl(0, 100%, 1%);
+    border-radius: 5%;
+}
+
+/* .footer {
+    border: 1px solid gray;
+    padding-top: 18px;
+    width: 100%;
+    height: 100px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation-name:fontAnimation  ;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 0;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes fontAnimation {
+0% {
+    font-size:20 ;
+    color: #26f5a5;
+    
+}
+10%{
+    font-size: 40px;
+    color: #ee3c10;
+}
+20%{
+    color: aliceblue;
+}
+30%{
+    color: blanchedalmond;
+}
+50%{
+    color: cornflowerblue;
+}
+80%{
+    color: lightcoral;
+}
+100%{
+    color: gold;
+    
+    border-radius: 50px;
+}
+} */
